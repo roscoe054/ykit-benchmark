@@ -27,5 +27,8 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.js' }),
-    ]
+    ],
+    devServer: {
+        port: 3000
+    }
 };
