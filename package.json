@@ -1,0 +1,23 @@
+{
+  "name": "ykit-demos",
+  "version": "1.0.0",
+  "description": "ykit test demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roscoe054/ykit-demos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roscoe054/ykit-demos/issues"
+  },
+  "homepage": "https://github.com/roscoe054/ykit-demos#readme",
+  "dependencies": {
+    "fs-extra": "^4.0.1"
+  },
+  "devDependencies": {}
+}
