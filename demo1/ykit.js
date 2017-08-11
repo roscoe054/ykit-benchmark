@@ -9,12 +9,12 @@ module.exports = {
             modifyWebpackConfig : function(baseConfig) {
                 baseConfig.context = './'
                 baseConfig.entry = {
-                    home: './app/pages/home/index.js',
-                    detail: './app/pages/detail/index.js',
-                    list: './app/pages/list/index.js',
+                    view1: './app/view1/index.js',
+                    view2: './app/view2/index.js',
+                    view3: './app/view3/index.js',
                     vendor: ['react', 'react-router']
                 }
-                baseConfig.output.local = {
+                baseConfig.output.local = baseConfig.output.prd = {
                     path: path.join(__dirname, 'dist'),
                     filename: '[name].js'
                 }

@@ -1,10 +1,16 @@
 var fs = require('fs-extra');
 var path = require('path');
 
-var reactSrcPath = './react/app';
-for(var i = 0; i < 300; i ++) {
-    fs.copySync(
-        path.join(reactSrcPath, 'module.jsx'),
-        path.join(reactSrcPath, `modules/module${i}.jsx`)
-    )
+const demoName = 'demo2';
+const viewNum = 10;
+
+for(var i = 1; i <= viewNum; i++) {
+    var modulePath = `./${demoName}/app/view${i}/modules`;
+
+    for(var j = 0; j < 50; j ++) {
+        fs.copySync(
+            path.join('./module.jsx'),
+            path.join(modulePath, `module${j}.jsx`)
+        )
+    }
 }
