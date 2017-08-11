@@ -1,11 +1,8 @@
 var baseConfig = require('./webpack.config.js');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+var webpack = require('webpack');
 
-baseConfig.plugins.push(new UglifyJSPlugin({
-    parallel: {
-        cache: false,
-        workers: 4
-    }
+baseConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
+    compress: {warnings: false}
 }))
 
 module.exports = baseConfig
