@@ -1,6 +1,6 @@
 # ykit-demos
 
-Ykit 和 Webpack 构建时间对比。
+Ykit(v0.5.5) 和 Webpack(v3.5.1) 构建时间对比。
 
 ## 测试结果:
 
